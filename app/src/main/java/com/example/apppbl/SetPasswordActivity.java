@@ -11,7 +11,7 @@ import com.example.apppbl.bean.MemberBean;
 
 public class SetPasswordActivity extends AppCompatActivity {
 
-    final EditText mEdtSetPwd = findViewById(R.id.edtSetPwd);
+    private EditText mEdtSetPwd;
     private Button mBtnSet;
 
     @Override
@@ -19,6 +19,7 @@ public class SetPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_password);
 
+        mEdtSetPwd = findViewById(R.id.edtSetPwd);
         findViewById(R.id.btnSet0).setOnClickListener(btnSetOnClick);
         findViewById(R.id.btnSet1).setOnClickListener(btnSetOnClick);
         findViewById(R.id.btnSet2).setOnClickListener(btnSetOnClick);
